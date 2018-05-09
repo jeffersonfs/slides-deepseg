@@ -1,13 +1,87 @@
+<section data-markdown>
+
+# Deep learning para segmentação de imagens
+
+por ** _Jefferson F. da Silva_ **
+
+</section>
+
+<section  class="container" data-markdown><textarea data-template>
+
+## Sumário
+
+1. Segmentação semântica  
+2. Deep learning para segmentação de imagens  
+  2.1 Segmentação de imagens sem uso de técnicas de deep learning  
+  2.2. Arquiteturas de redes para segmentação de imagens  
+
+</textarea></section>
 <section data-markdown><textarea data-template>
 
-# Title Page Markdown
+## Segmentação Semântica
 
-Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+### Datasets VOC2012 e MSC0CO
 
-```javascript
-  // Comment
-  const bubu = x => x;
-  bubu(5);
-```
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+
+## Conditional Random Field (CRF)
+
+
+</textarea></section>
+
+
+<section data-markdown><textarea data-template>
+
+## Evolução Cronológica
+
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+
+## Fully Convolutional Networks for Semantic Segmentation
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+
+## SegNet
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+
+## Dilated Convolutions
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+
+## DeepLab (v1 & v2)
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+
+## RefineNet
+
+</textarea></section>
+
+
+<section data-markdown><textarea data-template>
+
+## PSPNet
+
+
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+
+## DeepLab v3
+
+
 
 </textarea></section>

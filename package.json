@@ -1,24 +1,19 @@
 {
-  "name": "reveal.js-boilerplate",
-  "title": "reveal.js-boilerplate",
+  "name": "deepseg",
+  "title": "Deep learning para segmentação de imagens",
   "version": "1.0.0",
-  "description": "A simple and comfortable way to make a presentation.",
+  "description": "Deep learning para segmentação de imagens.",
   "main": "dist/index.html",
   "license": "MIT",
-  "repositoryName": "reveal.js-boilerplate",
-  "repository": "git+ssh://git@github.com/w3tec/reveal.js-boilerplate.git",
-  "homepage": "https://w3tecch.github.io/reveal.js-boilerplate",
+  "repositoryName": "slides-deepseg",
+  "repository": "https://github.com/jeffersonfs/slides-deepseg.git",
+  "homepage": "https://jefferson.github.io/deepseg",
   "author": "w3tec.ch <info@w3tec.ch>",
   "contributors": [
     {
-      "name": "Gery Hirschfeld",
-      "email": "gery.hirschfeld@w3tec.ch",
-      "url": "https://github.com/hirsch88"
-    },
-    {
-      "name": "David Weber",
-      "email": "david.weber@w3tec.ch",
-      "url": "https://github.com/dweber019"
+      "name": "Jefferson Fontinele da Silva",
+      "email": "jefferson.fs@ufma.br",
+      "url": "https://github.com/jeffersonfs"
     }
   ],
   "engines": {
@@ -35,7 +30,10 @@
     "favicons-webpack-plugin": "0.0.7",
     "highlight.js": "9.12.0",
     "jquery": "3.3.1",
-    "reveal.js": "3.6.0"
+    "reveal.js": "3.6.0",
+    "citation-js":"0.3.4",
+    "citation-js-showdown":"1.1.4"
+
   },
   "devDependencies": {
     "autoprefixer": "7.1.2",
