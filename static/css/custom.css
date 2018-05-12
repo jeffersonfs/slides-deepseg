@@ -1,0 +1,7 @@
+img[alt$="-fullwidth"]{
+  width: 40%;
+}
+
+figcaption{
+  font-size: smaller
+}

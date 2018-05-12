@@ -10,15 +10,17 @@ import { RevealMarkdown } from 'reveal.js/plugin/markdown/markdown';
 //import fontawesome from '@fortawesome/fontawesome';
 //import fontawesomeSolid from '@fortawesome/fontawesome-free-solid';
 //fontawesome.library.add(fontawesomeSolid);
+
+//import pageTitle from './slides/title-page.html';
 import pageMarkDown from './slides/000-page-md.slide.md';
-import pageHTML from './slides/teste.html';
 // -------------------------------------------------------------------------
 // Slides
 // -------------------------------------------------------------------------
 
 const slides = [
-  pageHTML,
+  //pageTitle,
   pageMarkDown,
+
   //pageIcons,
 ]
   .forEach(s => $('#slides').append(s));
@@ -30,6 +32,9 @@ Reveal.configure({ logo: true });
 Reveal.initialize({
   center: false,
   margin: 0,
+  margin: 0,
+  minScale: 1,
+  maxScale: 1,
   width: "100%",
   height: "100%",
   theme: "solarized"

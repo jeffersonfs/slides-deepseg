@@ -1,13 +1,15 @@
-<section data-markdown>
 
-# Deep learning para segmentação de imagens
+<section>
+<h1>Deep learning para segmentação de imagens</h1>
+por <strong> <em>Jefferson F. da Silva</em> </strong>
 
-por ** _Jefferson F. da Silva_ **
-
+<figure>
+<img src="./static/images/fpn.png" alt="FCN -fullwidth">
+<figcaption style="font-size: small;">Fonte: (LONG; SHELHAMER; DARRELL, 2015)<figcaption/>
+</figure>
 </section>
 
 <section  class="container" data-markdown><textarea data-template>
-
 ## Sumário
 
 1. Segmentação semântica  
@@ -16,6 +18,8 @@ por ** _Jefferson F. da Silva_ **
   2.2. Arquiteturas de redes para segmentação de imagens  
 
 </textarea></section>
+
+
 <section data-markdown><textarea data-template>
 
 ## Segmentação Semântica
@@ -81,6 +85,20 @@ por ** _Jefferson F. da Silva_ **
 <section data-markdown><textarea data-template>
 
 ## DeepLab v3
+
+
+
+</textarea></section>
+
+
+<section data-markdown><textarea data-template>
+
+## Referências
+
+[LONG, Jonathan; SHELHAMER, Evan; DARRELL, Trevor. **Fully convolutional networks for semantic segmentation**. In: Proceedings of the IEEE conference on computer vision and pattern recognition. 2015. p. 3431-3440.](http://arxiv.org/pdf/1804.08286v1.pdf)
+
+
+
 
 
 
