@@ -1,0 +1,166 @@
+
+<section>
+<h1>Deep learning para segmentação de imagens</h1>
+por <strong> <em>Jefferson F. da Silva</em> </strong>
+
+<figure>
+<img src="./static/images/fpn.png" alt="FCN -fullwidth">
+  <figcaption style="font-size: small;">Fonte: (LONG; SHELHAMER; DARRELL, 2015)</figcaption>
+</figure>
+</section>
+
+<!--<section>
+	<p class="fragment grow">grow</p>
+	<p class="fragment shrink">shrink</p>
+	<p class="fragment fade-out">fade-out</p>
+	<p class="fragment fade-up">fade-up (also down, left and right!)</p>
+	<p class="fragment current-visible">visible only once</p>
+	<p class="fragment highlight-current-blue">blue only once</p>
+	<p class="fragment highlight-red">highlight-red</p>
+	<p class="fragment highlight-green">highlight-green</p>
+	<p class="fragment highlight-blue">highlight-blue</p>
+</section>-->
+
+<section  class="container" data-markdown><textarea data-template>
+## Sumário
+
+1. Segmentação semântica  
+2. Deep learning para segmentação de imagens  
+  2.1 Segmentação de imagens sem uso de técnicas de deep learning  
+  2.2. Arquiteturas de redes para segmentação de imagens  
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+## Segmentação Semântica
+<figure>
+<img src="./static/images/segmentation-slide1.jpg" >
+  <figcaption style="font-size: small;">Fonte: (KUNDU; VINEET; KOLTUN, 2016)</figcaption>
+</figure>
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+  ## Datasets
+   PASCAL VOC 2012
+
+<img src="./static/images/pascal-voc.png">
+  <figcaption style="font-size: small;">Fonte: (EVERINGHAM et al, 2012)</figcaption>
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+  ## Datasets
+
+  COCO - Common Objects in Context
+
+<img src="./static/images/mscoco-example.png">
+  <figcaption style="font-size: small;">Fonte: (LIN et al, 2014)</figcaption>
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+  ## Datasets
+
+  KITTI - Segmentation
+
+<img src="./static/images/semseg.png" width="500px">
+  <figcaption style="font-size: small;">Fonte: (ALHAIJA et al, 2017)</figcaption>
+
+</textarea></section>
+
+
+<section data-markdown><textarea data-template>
+## Pascal VOC Leaderboard
+
+  http://host.robots.ox.ac.uk:8080/leaderboard/displaylb.php?challengeid=11&compid=6
+
+<img src="./static/images/PASCALVOC_Challenge_performance.png">
+  <figcaption style="font-size: small;">Fonte: http://host.robots.ox.ac.uk:8080/leaderboard/displaylb.php?challengeid=11&compid=6</figcaption>
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+
+## Fully Convolutional Networks for Semantic Segmentation
+
+  <img src="./static/images/fcn-1.png">
+
+  <figcaption style="font-size: small;">Fonte: (LONG; SHELHAMER; DARRELL, 2015)</figcaption>
+
+</textarea></section>
+
+
+<section data-markdown><textarea data-template>
+
+## Fully Convolutional Networks for Semantic Segmentation
+
+   * <p class="fragment fade-up">Primeira rede de segmentação __pixelwise__ com treinamento ponta a ponta</p>
+   * <p class="fragment fade-up">Reutiliza pesos pré-treinados com o dataset ImageNet </p>
+   * <p class="fragment fade-up">Utiliza Upsample como camadas de deconvolucional</p>
+   * <p class="fragment fade-up">Introduz pular conexões para melhorar o Upsampling</p>
+
+</textarea></section>
+
+
+<section data-markdown><textarea data-template>
+
+## Deconvolucão ou Convolução Transposta
+
+<div><img src="./static/images/no_padding_no_strides.gif" class="fragment fade-up"/></div>
+
+  <div class="fragment fade-up"><img src="./static/images/no_padding_no_strides_transposed.gif" />
+    <figcaption >Fonte: (DUMOULIN; VISIN, 2016)</figcaption>
+  </div>
+
+
+
+
+
+
+
+</textarea></section>
+
+
+
+
+<section data-markdown><textarea data-template>
+
+## SegNet
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+
+## Dilated Convolutions
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+
+## DeepLab (v1 & v2)
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+
+## RefineNet
+
+</textarea></section>
+
+
+<section data-markdown><textarea data-template>
+
+## PSPNet
+
+
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+
+## DeepLab v3
+
+
+
+</textarea></section>
+

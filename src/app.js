@@ -11,16 +11,15 @@ import { RevealMarkdown } from 'reveal.js/plugin/markdown/markdown';
 //import fontawesomeSolid from '@fortawesome/fontawesome-free-solid';
 //fontawesome.library.add(fontawesomeSolid);
 
-//import pageTitle from './slides/title-page.html';
-import pageMarkDown from './slides/000-page-md.slide.md';
+import pageMarkDown from './slides/slides.html';
+import pageRef from './slides/ref.html';
 // -------------------------------------------------------------------------
 // Slides
 // -------------------------------------------------------------------------
 
 const slides = [
-  //pageTitle,
   pageMarkDown,
-
+  pageRef
   //pageIcons,
 ]
   .forEach(s => $('#slides').append(s));
@@ -28,6 +27,26 @@ const slides = [
 // -------------------------------------------------------------------------
 // Reveal.js Configuration
 Reveal.configure({ logo: true });
+
+
+function jumpSlide() {
+
+  // The id of the slide you wish to jump to/from
+  target = "slide-ref";
+
+  slide = Reveal.getCurrentSlide();
+  // If we're on the target slide, jump to original slide, if there was one
+  if (slide.id == target) {
+    Reveal.slide(orig['h'], orig['v']);
+  }
+  else {
+    // 'Save' the current slide's index to jump back to later
+    orig = Reveal.getIndices();
+    // Jump to the target slide
+    jump = Reveal.getIndices(document.getElementById(target));
+    Reveal.slide(jump['h'], jump['v']);
+  }
+}
 
 Reveal.initialize({
   center: false,
@@ -37,9 +56,15 @@ Reveal.initialize({
   maxScale: 1,
   width: "100%",
   height: "100%",
-  theme: "solarized"
+  theme: "solarized",
+  slideNumber: 'c',
+  keyboard: {
+      // '0' key will jump between current slide and slide-X
+      48: function() {jumpSlide()},
+      }
 });
 
 RevealMarkdown.initialize();
 
 hljs.initHighlightingOnLoad();
+
