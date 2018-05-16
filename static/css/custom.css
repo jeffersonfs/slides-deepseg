@@ -5,3 +5,8 @@ img[alt$="-fullwidth"]{
 figcaption{
   font-size: smaller
 }
+
+.justify-center {
+  justify-content: center;
+}
+
