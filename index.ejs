@@ -6,12 +6,21 @@
   <title>
     <%- htmlWebpackPlugin.options.metadata.title %>
   </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- <base href="<%- htmlWebpackPlugin.options.metadata.baseUrl %>"> -->
   <!-- imported CSS are concatenated and added automatically -->
 </head>
 
 <body>
+
+   <div class="share-reveal" style="display: block; position: absolute; bottom: 16px; left: 10%; margin-left: -139px; z-index: 20;">
+			<a class="share-reveal-editor" href="https://slides.com">
+			 <img src="./static/images/ivision.png" alt="FCN -fullwidth">
+			</a>
+   </div>
 
   <div id="app" class="reveal">
     <div id="slides" class="slides"></div>

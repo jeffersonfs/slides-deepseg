@@ -49,8 +49,9 @@ function jumpSlide() {
 }
 
 Reveal.initialize({
-  center: false,
-  margin: 0,
+  center: true,
+  controls: true,
+  history: true,
   margin: 0,
   minScale: 1,
   maxScale: 1,
@@ -61,7 +62,9 @@ Reveal.initialize({
   keyboard: {
       // '0' key will jump between current slide and slide-X
       48: function() {jumpSlide()},
-      }
+  },
+  //parallaxBackgroundImage: "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
+
 });
 
 RevealMarkdown.initialize();

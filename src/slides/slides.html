@@ -1,6 +1,6 @@
 
 <section>
-<h1>Deep learning para segmentação de imagens</h1>
+<h2>Deep learning para segmentação de imagens</h2>
 por <strong> <em>Jefferson F. da Silva</em> </strong>
 
 <figure>
@@ -21,7 +21,7 @@ por <strong> <em>Jefferson F. da Silva</em> </strong>
 	<p class="fragment highlight-blue">highlight-blue</p>
 </section>-->
 
-<section  class="container" data-markdown><textarea data-template>
+<!--<section  class="container" data-markdown><textarea data-template>
 ## Sumário
 
 1. Segmentação semântica  
@@ -29,48 +29,43 @@ por <strong> <em>Jefferson F. da Silva</em> </strong>
   2.1 Segmentação de imagens sem uso de técnicas de deep learning  
   2.2. Arquiteturas de redes para segmentação de imagens  
 
-</textarea></section>
+</textarea></section> -->
 
 <section data-markdown><textarea data-template>
-## Segmentação Semântica
+ ### Segmentação Semântica
 <figure>
-<img src="./static/images/segmentation-slide1.jpg" >
+<img src="./static/images/segmentation-slide1.jpg" style="width: 60%;" >
   <figcaption style="font-size: small;">Fonte: (KUNDU; VINEET; KOLTUN, 2016)</figcaption>
 </figure>
 </textarea></section>
 
 <section data-markdown><textarea data-template>
-  ## Datasets
-   PASCAL VOC 2012
+  ### Datasets - PASCAL VOC 2012
 
-<img src="./static/images/pascal-voc.png">
+  <img src="./static/images/pascal-voc.png" >
   <figcaption style="font-size: small;">Fonte: (EVERINGHAM et al, 2012)</figcaption>
 
 </textarea></section>
 
 <section data-markdown><textarea data-template>
-  ## Datasets
+  ### Datasets - COCO - Common Objects in Context
 
-  COCO - Common Objects in Context
-
-<img src="./static/images/mscoco-example.png">
+<img src="./static/images/mscoco-example.png" style="width: 25%;">
   <figcaption style="font-size: small;">Fonte: (LIN et al, 2014)</figcaption>
 
 </textarea></section>
 
 <section data-markdown><textarea data-template>
-  ## Datasets
+  ### Datasets - KITTI - Segmentation
 
-  KITTI - Segmentation
-
-<img src="./static/images/semseg.png" width="500px">
+<img src="./static/images/semseg.png" style="width: 70%;">
   <figcaption style="font-size: small;">Fonte: (ALHAIJA et al, 2017)</figcaption>
 
 </textarea></section>
 
 
 <section data-markdown><textarea data-template>
-## Pascal VOC Leaderboard
+### Pascal VOC Leaderboard
 
   http://host.robots.ox.ac.uk:8080/leaderboard/displaylb.php?challengeid=11&compid=6
 
@@ -81,86 +76,173 @@ por <strong> <em>Jefferson F. da Silva</em> </strong>
 
 <section data-markdown><textarea data-template>
 
-## Fully Convolutional Networks for Semantic Segmentation
+#### Fully Convolutional Networks for Semantic Segmentation (FCN)
 
-  <img src="./static/images/fcn-1.png">
-
-  <figcaption style="font-size: small;">Fonte: (LONG; SHELHAMER; DARRELL, 2015)</figcaption>
-
-</textarea></section>
-
-
-<section data-markdown><textarea data-template>
-
-## Fully Convolutional Networks for Semantic Segmentation
-
-   * <p class="fragment fade-up">Primeira rede de segmentação __pixelwise__ com treinamento ponta a ponta</p>
-   * <p class="fragment fade-up">Reutiliza pesos pré-treinados com o dataset ImageNet </p>
-   * <p class="fragment fade-up">Utiliza Upsample como camadas de deconvolucional</p>
-   * <p class="fragment fade-up">Introduz pular conexões para melhorar o Upsampling</p>
+   <img src="./static/images/fcn-1.png" style="width: 40%;"/>
+   <figcaption style="font-size: small;">Fonte: (LONG; SHELHAMER; DARRELL, 2015)</figcaption>
 
 </textarea></section>
 
 
 <section data-markdown><textarea data-template>
 
-## Deconvolucão ou Convolução Transposta
+### FCN - Contribuições
 
-<div><img src="./static/images/no_padding_no_strides.gif" class="fragment fade-up"/></div>
+   * Primeira rede de segmentação pixelwise com treinamento ponta a ponta <!-- .element: class="fragment fade-up" data-fragment-index="2" -->
+   * Reutiliza pesos pré-treinados com o dataset ImageNet  <!-- .element: class="fragment fade-up" -->
+   * Utiliza Upsample como camadas deconvolucional <!-- .element: class="fragment fade-up" -->
 
-  <div class="fragment fade-up"><img src="./static/images/no_padding_no_strides_transposed.gif" />
-    <figcaption >Fonte: (DUMOULIN; VISIN, 2016)</figcaption>
+
+</textarea></section>
+
+
+<section data-markdown><textarea data-template>
+
+### Deconvolucão ou Convolução Transposta
+
+<div><img src="./static/images/no_padding_no_strides.gif" class="fragment fade-up" style="width: 15%;"/></div>
+
+  <div class="fragment fade-up"><img src="./static/images/no_padding_no_strides_transposed.gif" style="width: 15%;" />
+    <figcaption style="font-size: small;">Fonte: (DUMOULIN; VISIN, 2016)</figcaption>
   </div>
 
-
-
-
-
-
-
 </textarea></section>
 
 
 
 
 <section data-markdown><textarea data-template>
+### FCN
 
-## SegNet
-
-</textarea></section>
-
-<section data-markdown><textarea data-template>
-
-## Dilated Convolutions
+<figure>
+<img src="./static/images/fpn-annotated.png" alt="FCN" style="width: 60%;">
+  <figcaption style="font-size: small;">Fonte: (LONG; SHELHAMER; DARRELL, 2015)</figcaption>
+</figure>
 
 </textarea></section>
 
 <section data-markdown><textarea data-template>
+### FCN
 
-## DeepLab (v1 & v2)
-
-</textarea></section>
-
-<section data-markdown><textarea data-template>
-
-## RefineNet
-
-</textarea></section>
-
-
-<section data-markdown><textarea data-template>
-
-## PSPNet
-
-
+<figure>
+<img src="./static/images/fcn-activation.png" alt="FCN" style="width: 60%;">
+  <figcaption style="font-size: small;">Fonte: (LONG; SHELHAMER; DARRELL, 2015)</figcaption>
+</figure>
 
 </textarea></section>
 
 <section data-markdown><textarea data-template>
+### SegNet
 
-## DeepLab v3
+  <figure>
+<img src="./static/images/segnet.png" alt="Segnet" style="width: 70%;">
+  <figcaption style="font-size: small;">Fonte: (BADRINARAYANAN; KENDALL; CIPOLLA, 2017)</figcaption>
+</figure>
+
+</textarea></section>
+
+<section data-markdown ><textarea data-template>
+### SegNet
+
+  <figure>
+<img src="./static/images/segnet.gif" alt="Segnet" style="width: 60%;">
+  <figcaption style="font-size: small;">Fonte: (BADRINARAYANAN; KENDALL; CIPOLLA, 2017)</figcaption>
+</figure>
+
+</textarea></section>
+
+
+
+<section data-markdown><textarea data-template>
+### U-net
+
+  <figure>
+<img src="./static/images/u-net.png" alt="U-Net" style="width:45%;">
+  <figcaption style="font-size: small;">Fonte: (RONNEBERGER; FISCHER; BROX, 2015)</figcaption>
+</figure>
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+### U-net
+
+  <figure>
+<img src="./static/images/u-net-result.png" alt="U-Net" style="width:60%;">
+  <figcaption style="font-size: small;">Fonte: (RONNEBERGER; FISCHER; BROX, 2015)</figcaption>
+</figure>
+
+</textarea></section>
+
+
+<section data-markdown><textarea data-template>
+### DeepLab (v1 & v2)
+
+  <figure>
+    <img src="./static/images/deeplabv1.png" alt="U-Net" style="width:60%;">
+    <figcaption style="font-size: small;">Fonte: (CHEN et al, 2018)</figcaption>
+  </figure>
+
+</textarea></section>
+
+<section data-markdown><textarea data-template>
+### DeepLab (v1 & v2)
+
+<div class="fragment fade-up"><img src="./static/images/dilation.gif"  style="width: 15%;"/>
+<figcaption style="font-size: small;" >Fonte: (DUMOULIN; VISIN, 2016)</figcaption>
+</div>
+
+  <div class="fragment fade-up"><img src="./static/images/atrous_spatial.png" style="width: 35%;" />
+<figcaption style="font-size: small;" >Fonte: (CHEN et al, 2018)</figcaption>
+  </div>
+
+</textarea></section>
+
+
+<section data-markdown><textarea data-template>
+### DeepLab (v1 & v2) - Resultado
+
+<div ><img src="./static/images/deeplab3.png"  style="width: 65%;"/>
+<figcaption style="font-size: small;" >Fonte: (DUMOULIN; VISIN, 2016)</figcaption>
+</div>
+
+
+</textarea></section>
+
+
+<section data-markdown><textarea data-template>
+### PSPNet
+
+  <div ><img src="./static/images/psp1.png"  style="width: 65%;"/>
+   <figcaption style="font-size: small;" >Fonte: (ZHAO et al, 2017)</figcaption>
+ </div>
+
+</textarea></section>
+
+
+<section data-markdown><textarea data-template>
+### PSPNet
+
+  <div ><img src="./static/images/psp.gif"  style="width: 35%;"/>
+   <figcaption style="font-size: small;" >Fonte: (ZHAO et al, 2017)</figcaption>
+ </div>
 
 
 
 </textarea></section>
 
+
+<section data-background="./static/images/duvidas.png">
+</section>
+
+
+<section data-markdown><textarea data-template>
+### Contato
+
+  * [http://jeffersonfs.github.io/slides-deepseg/](http://jeffersonfs.github.io/slides-deepseg/)
+  * [Github @jeffersonfs](https://github.com/jeffersonfs)
+  * [Email jefferson.fs@ufma.br](jefferson.fs@ufma.br)
+
+  <img src="./static/images/qrcode.svg"  style="width: 35%;height: 35%"/>
+
+
+</textarea></section>
